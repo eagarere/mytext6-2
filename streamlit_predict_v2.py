@@ -72,14 +72,14 @@ with open('output_uniques.pkl', 'rb') as f:
     output_uniques_map = pickle.load(f)
 
 if submitted:
-     if not (20.0 <= bill_length <= 70.0 and 10.0 <= bill_depth <= 25.0 and 
+    if not (20.0 <= bill_length <= 70.0 and 10.0 <= bill_depth <= 25.0 and 
             170.0 <= flipper_length <= 230.0 and 2000.0 <= body_mass <= 6000.0):
          
          st.error("输入的特征数值超出合理范围，请检查后重新输入！")
 
 
 
-     else:
+    else:
          
          format_data_df = pd.DataFrame(data=[format_data], columns=rfc_model.feature_names_in_)
          # 使用模型对格式化后的数据 format_data 进行预测，返回预测的类别代码
