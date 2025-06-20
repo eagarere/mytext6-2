@@ -75,7 +75,7 @@ if submitted:
     if not (20.0 <= bill_length <= 70.0 and 10.0 <= bill_depth <= 25.0 and 
             170.0 <= flipper_length <= 230.0 and 2000.0 <= body_mass <= 6000.0):
          
-         st.error("输入的特征数值超出合理范围，请检查后重新输入！")
+        st.error("输入的特征数值超出合理范围，请检查后重新输入！")
 
 
 
